@@ -49,6 +49,8 @@ body {
     display: flex;
     min-height: 100vh;
     position:relative;
+    justify-content: center;
+    align-content: center;
 }
 
 .container{
@@ -60,6 +62,57 @@ body {
     max-width: 350px;
     align-self: center;
     justify-content: center;
+}
+
+.hiddenanchor {
+    display: none;
+}
+
+.login-form{
+    z-index:22;
+    position: absolute;
+}
+
+.registration-form, .request-pass{
+    position: absolute;
+    z-index:21;
+    opacity: 0;
+}
+
+#signup:target ~ .content .registration-form,
+#request-pass:target ~ .content .request-pass,
+#signin:target ~ .content .login-form {
+    z-index:22;
+    -webkit-animation-name:fadeInLeft;
+    animation-name:fadeInLeft;
+    -webkit-animation-delay:.1s;
+    animation-delay:.1s
+}
+
+#signup:target ~ .content .login-form,
+#request-pass:target ~ .content .login-form,
+#signin:target ~ .content .registration-form,
+#signin:target ~ .content .request-pass{
+    -webkit-animation-name:fadeOutLeft;
+    animation-name:fadeOutLeft
+}
+
+.animate{
+    -webkit-animation-duration:0.5s;
+    -webkit-animation-timing-function:ease;
+    -webkit-animation-fill-mode:both;
+    -moz-animation-duration:0.5s;
+    -moz-animation-timing-function:ease;
+    -moz-animation-fill-mode:both;
+    -o-animation-duration:0.5s;
+    -o-animation-timing-function:ease;
+    -o-animation-fill-mode:both;
+    -ms-animation-duration:0.5s;
+    -ms-animation-timing-function:ease;
+    -ms-animation-fill-mode:both;
+    animation-duration:0.5s;
+    animation-timing-function:ease;
+    animation-fill-mode:both
 }
 
 @media (max-width: 650px) {

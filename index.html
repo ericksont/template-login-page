@@ -3,25 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    
     <title>Tela de Login</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <div class="root">
+
+        <a class="hiddenanchor" id="signup"></a>
+        <a class="hiddenanchor" id="signin"></a>
+        <a class="hiddenanchor" id="request-pass"></a>
+
         <div class="banners" ></div>
         <div class="content">
 
-            <div class="login container">
-                a
-            </div>
+            <section class="animate login-form">
+                <h1>Login Form</h1>
+                <a href="#signup"> Create Account </a>
+                <a href="#request-pass"> Request Pass </a>
+                
+            </section>
+            
+            <section class="animate registration-form">
+                <h1>Create Account</h1>
+                <a href="#signin"> Log in </a>
+            </section>
 
-            <div class="requet-pass container" style="display:none">
-                b
-            </div>
-
-            <div class="sign-up container" style="display:none">
-                c
-            </div>
+            <section class="animate request-pass">
+                <h1>Request Pass</h1>
+                <a href="#signin"> Log in </a>
+            </section>
             
         </div>
     </div>
