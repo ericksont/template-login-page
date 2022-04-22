@@ -46,22 +46,20 @@ body {
     width: 700px;
     height: 100vh;
     overflow-y: auto;
+    display: flex;
+    min-height: 100vh;
+    position:relative;
 }
 
-.instagram-logo {
-    height: 3rem;
-}
-
-.instagram-login {
-    background-color: #0095f6;
-    color: #ffffff;
-    padding: 8px;
-    border-radius: 4px;
-}
-
-.instagram-logout {
-    color: #0095f6;
-    margin-top: 1rem;
+.container{
+    display: flex;  
+    flex: 1;
+    margin: 0 auto;
+    position: relative;
+    text-shadow:0 1px 0 #fff;
+    max-width: 350px;
+    align-self: center;
+    justify-content: center;
 }
 
 @media (max-width: 650px) {
