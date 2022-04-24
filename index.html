@@ -3,38 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Tela de Login</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="style.css">
-    <title>Instagram</title>
+    
 </head>
 <body>
-    <div class="instagram-wrapper">
-        <div class="instagram-phone">
-            <img src="./img/instagram-celular.png" alt="celular">
-        </div>
-        <div class="instagram-continue">
-            <div class="group">
-                <img src="./img/instagram-logo.png" class="instagram-logo" alt="instagram logo">
-                <div class="profile-photo">
-                    <img src="./img/perfil-instagram.jpg" alt="foto de perfil">
+    <div class="root">
+
+        <a class="hiddenanchor" id="signup"></a>
+        <a class="hiddenanchor" id="signin"></a>
+        <a class="hiddenanchor" id="request-pass"></a>
+
+        <div class="banners" ></div>
+        <div class="content">
+
+            <section class="animate container login-form">
+                <h1>Login Form</h1>
+                <form>
+                    <input type="text" placeholder="Username" />
+                    <input type="password" placeholder="Password" />
+                    <div class="actions">
+                        <a class="btn" href="#">Login</a>
+                        <a class="reset_pass" href="#request-pass">Lost your password?</a>
+                    </div>
+                </form>
+                
+                <div class="separator">
+                    <p class="change_link">New to site?
+                        <a href="#signup" > Create Account </a>
+                    </p>
+
+                    <h1>Erickson Tavares</h1>                    
                 </div>
-                <a href="#" class="instagram-login">Continue como sprucegabriela</a>
-                <a href="#" class="instagram-logout">Remover conta</a>
-            </div>
-            <div class="group">
-                <p class="not-account">Não é sprucegabriela?</p>
-                <p class="not-account">
-                    <span class="link-blue">Alternar contas</span>
-                    ou
-                    <span class="link-blue">Inscreva-se</span>
-                </p>
-            </div>
-            <div class="get-the-app">
-                <p class="get-app">Baixe o aplicativo</p>
-                <div class="download">
-                    <a href="#" class="app-download"></a>
-                    <a href="#" class="app-download"></a>
+                
+            </section>
+            
+            <section class="animate container registration-form">
+                <h1>Create Account</h1>
+                <form>
+                    <input type="text" placeholder="Username" />
+                    <input type="email" placeholder="E-mail" />
+                    <input type="password" placeholder="Password" />
+                    <a class="btn" href="#">Submit</a>
+                </form>
+                <div class="separator">
+                    <p class="change_link">Already a member?
+                        <a href="#signin" > Login </a>
+                    </p>
+
+                    <h1>Erickson Tavares</h1>                    
                 </div>
-            </div>
+            </section>
+
+            <section class="animate container request-pass">
+                <h1>Request Pass</h1>
+                <form>
+                    <input type="email" placeholder="E-mail" />
+                    <a class="btn" href="#">Submit</a>
+                </form>
+                <div class="separator">
+                    <p class="change_link">Already a member?
+                        <a href="#signin" > Login </a>
+                    </p>
+
+                    <h1>Erickson Tavares</h1>                    
+                </div>
+            </section>
+            
         </div>
     </div>
 </body>
