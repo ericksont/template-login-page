@@ -6,7 +6,7 @@
 ![Bitbucket open issues](https://img.shields.io/bitbucket/issues/ericksont/template-login-page?style=for-the-badge)
 ![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/ericksont/template-login-page?style=for-the-badge)
 
-<img src="images/model.png" alt="Imagem da tela">
+<img src="img/model.png" alt="Imagem da tela">
 
 > Template with login form, recover password and register.
 
